@@ -1,0 +1,8 @@
+example_id                                             | status | run_time        |
+------------------------------------------------------ | ------ | --------------- |
+./spec/controllers/surveys_controller_spec.rb[1:1:1]   | passed | 0.10806 seconds |
+./spec/controllers/surveys_controller_spec.rb[1:1:2]   | passed | 0.0132 seconds  |
+./spec/controllers/surveys_controller_spec.rb[1:1:3:1] | passed | 0.01684 seconds |
+./spec/controllers/surveys_controller_spec.rb[1:1:4:1] | passed | 0.01444 seconds |
+./spec/features/surveys/submit_spec.rb[1:1]            | passed | 0.27201 seconds |
+./spec/features/surveys/submit_spec.rb[1:2]            | passed | 0.34793 seconds |

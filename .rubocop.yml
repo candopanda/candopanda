@@ -17,9 +17,6 @@ RSpec/MultipleExpectations:
 RSpec/ExampleLength:
   Enabled: false
 
-RSpec/MessageSpies:
-  EnforcedStyle: receive
-
 Style/AndOr:
   Enabled: false
 
@@ -58,4 +55,7 @@ Style/PercentLiteralDelimiters:
   Enabled: false
 
 RSpec/DescribeClass:
+  Enabled: false
+
+Capybara/FeatureMethods:
   Enabled: false
