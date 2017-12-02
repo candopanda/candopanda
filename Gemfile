@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "codepanda", github: "candopanda/codepanda", require: "codepanda/client"
+gem "connection_pool"
 gem "pg"
 gem "puma", "~> 3.7"
 gem "rails", "~> 5.1.4"
@@ -15,6 +17,8 @@ gem "webpacker"
 group :development, :test do
   gem "byebug", platforms: %i(mri mingw x64_mingw)
   gem "capybara", "~> 2.13"
+  gem "capybara-webkit"
+  gem "factory_bot_rails"
   gem "rspec-rails"
   gem "rubocop"
   gem "rubocop-rspec"
