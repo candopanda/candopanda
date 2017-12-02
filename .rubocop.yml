@@ -1,0 +1,61 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+  Exclude:
+    - bin/**/*
+    - db/**/*
+    - vendor/**/*
+    - node_modules/**/*
+    - tmp/**/*
+
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+Style/AndOr:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/StringMethods:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
+  SupportedStylesAlignWith:
+    - keyword
+    - variable
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false
