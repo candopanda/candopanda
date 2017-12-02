@@ -7,6 +7,11 @@ class SurveysController < ApplicationController
     @survey = Survey.find(params[:id])
   end
 
+  def create
+    survey = Survey.create!
+    redirect_to survey_path(survey)
+  end
+
   def update
     @survey = Survey.find(params[:id])
 

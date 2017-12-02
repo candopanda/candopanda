@@ -1,4 +1,4 @@
-<%= content_tag(:dt, survey.created_at) %>
-<%= content_tag(:dd) do %>
+<li>
+  <%= survey.created_at.to_s(:short) %>
   <%= link_to "Show", survey_path(survey) %>
-<% end %>
+</li>
