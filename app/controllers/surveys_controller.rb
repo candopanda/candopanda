@@ -1,6 +1,15 @@
 class SurveysController < ApplicationController
+  def index
+    @surveys = Survey.all.order(created_at: :desc)
+  end
+
   def show
     @survey = Survey.find(params[:id])
+  end
+
+  def create
+    survey = Survey.create!
+    redirect_to survey_path(survey)
   end
 
   def update

@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :surveys, only: %i(show update)
+  resources :surveys, only: %i(index create show update)
+  root to: "surveys#index"
 end
