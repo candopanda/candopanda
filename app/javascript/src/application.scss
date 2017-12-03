@@ -1,0 +1,85 @@
+.banner {
+  position: absolute;
+  padding: 0 15px;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  background-color: #E0EBF5;
+
+  &-title {
+    transform: translateY(-50%);
+    float: left;
+  }
+
+  &-controls {
+    display: inline-block;
+    padding: 5px 10px 10px 30px;
+
+    input[type=button] {
+      cursor: pointer;
+      height: 30px;
+      border: 1px solid #375EAB;
+      font-size: 16px;
+      font-family: sans-serif;
+      background: #375EAB;
+      color: white;
+      position: static;
+      top: 1px;
+    }
+
+    input[type=button]:disabled {
+      cursor: auto;
+      background: #eee;
+      border-color: #eee;
+    }
+
+  }
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.survey-form {
+  &-wrap {
+    padding: 5px 5px 5px 20px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    background: #ffd;
+
+    textarea {
+      font-family: Menlo, monospace;
+      font-size: 11pt;
+      width: 97%;
+      color: black;
+      background: inherit;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: none;
+      outline: none;
+      resize: none;
+    }
+  }
+
+  &-output {
+    font-family: Menlo, monospace;
+    font-size: 11pt;
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+  }
+
+  &-output.failure {
+    color: #900;
+  }
+}

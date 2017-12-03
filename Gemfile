@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "active_model_serializers", "~> 0.10.0"
 gem "codepanda", github: "candopanda/codepanda", require: "codepanda/client"
 gem "connection_pool"
 gem "pg"
@@ -17,11 +18,12 @@ gem "webpacker"
 group :development, :test do
   gem "byebug", platforms: %i(mri mingw x64_mingw)
   gem "capybara", "~> 2.13"
-  gem "capybara-webkit"
+  gem "chromedriver-helper"
   gem "factory_bot_rails"
   gem "rspec-rails"
   gem "rubocop"
   gem "rubocop-rspec"
+  gem "selenium-webdriver"
 end
 
 group :development do
